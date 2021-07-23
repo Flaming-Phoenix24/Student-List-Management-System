@@ -8,7 +8,7 @@ struct date
 };
 // Structure to store student data
 struct student
-{
+{ 
 	int roll_no;
 	int standard;
 	char section;
@@ -151,16 +151,16 @@ void displayContacts(string str)
 		// no more prefixes are going to be present. 
 		if (curNode == NULL) 
 		{ 
-			cout << "nNo Results Found for :" << prefix 
-				<< " n"; 
+			cout << "\nNo Results Found for :" << prefix 
+				<< "\n"; 
 			i++; 
 			break; 
 		} 
 
 		// If present in trie then display all 
 		// the contacts with given prefix. 
-		cout << "nSuggestions based on :" << prefix 
-			<< " are n"; 
+		cout << "\nSuggestions based on :" << prefix 
+			<< " are \n"; 
 		displayContactsUtil(curNode, prefix); 
 
 		// Change prevNode for next prefix 
@@ -173,8 +173,8 @@ void displayContacts(string str)
 	for (; i<len; i++) 
 	{ 
 		prefix += (char)str[i]; 
-		cout << "nNo Results Found for : " << prefix 
-			<< " n"; 
+		cout << "\nNo Results Found for : " << prefix 
+			<< "\n"; 
 	} 
 } 
 
@@ -190,7 +190,7 @@ void insertIntoTrie(int n)
 	{
 		cout<<"Please enter name of Student\n";
 		cin>>name;
-		insert(name); 
+		insert(name);
 	}
 } 
 
